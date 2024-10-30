@@ -1,0 +1,147 @@
+*{
+    font-family: 'DMSans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+.whitetext{
+    color: white;
+}
+
+img{
+    width: 75%;
+}
+
+.textaligntitle{
+    text-align: center;
+}
+
+.blacktext{
+    color: black;
+    font-size: 20px;
+}
+
+
+.smalltext{
+    font-size: 15px;
+}
+
+.social-media-container{
+    grid-area: social-media-container;
+    background-color: rgb(118, 81, 220);
+    border-radius: 12px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.account-containers{
+    grid-area: account-containers;
+
+    background-color: #FFFF;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.full-img{
+    width: 100%;
+}
+
+.schedule-container{
+    grid-area: schedule-container;
+
+    background-color: #FFCC69;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0px;
+}
+
+.schedule-posts-container{
+    grid-area: schedule-posts-container;
+
+    background-color: #DCD1FC;
+    border-radius: 12px;
+    padding: 10px 10px;
+    margin-bottom: 25px;
+}
+
+.grow-followers-container{
+    grid-area: grow-followers-container;
+
+    background-color: rgb(118, 81, 220);
+    border-radius: 12px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+}
+
+.audience-growth-container{
+    grid-area: audience-growth-container;
+    background-color: #FFFF;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.audience-title{
+    font-size: 25px;
+    margin: 0px;
+}
+
+.create-post-container{
+    grid-area: create-post-container;
+    background-color: #FAEEE2; 
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.ai-content-container{
+    grid-area: ai-content-container;
+   background-color:#FFCC69;
+   border-radius: 12px;
+   padding: 10px 20px;
+   margin-bottom: 25px;
+}
+
+@media(min-width:700px) {
+    
+body{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "create-post-container social-media-container social-media-container schedule-posts-container"
+    "create-post-container account-containers schedule-container schedule-posts-container"
+    "ai-content-container account-containers schedule-container schedule-posts-container"
+    "ai-content-container audience-growth-container grow-followers-container grow-followers-container"
+    "attribution attribution attribution attribution";
+}
+
+.grow-followers-container{
+    flex-direction: row;
+}
+
+.img-gorw{
+    width: 40%;
+}
+
+}
+
+@media (min-width:1100px) {
+    body{
+        padding: 20px 100px
+    }
+}
